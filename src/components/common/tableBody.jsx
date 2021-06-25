@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
 
-//data
-//columns
-//onDelete
-
 class TableBody extends Component {
   renderCell = (item, column) => {
     if (column.content) return column.content(item);
