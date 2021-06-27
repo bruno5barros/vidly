@@ -6,6 +6,7 @@ import NotFound from "./components/notFound";
 import MovieDetail from "./components/movieDetail";
 import Rentals from "./components/rentals";
 import LoginForm from "./components/loginForm";
+import RegisterForm from "./components/registerForm";
 import { Route, Switch, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 
@@ -17,6 +18,7 @@ class App extends Component {
         <main className="container">
           <Switch>
             <Route path="/movies/:id" exact component={MovieDetail} />
+            <Route path="/register" exact component={RegisterForm} />
             <Route path="/login" exact component={LoginForm} />
             <Route path="/rentals" exact component={Rentals} />
             <Route path="/customers" exact component={Customers} />
